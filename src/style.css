@@ -1,0 +1,221 @@
+:root{
+    --main-bg-color:#7AB2B2;
+    --text1-color:#EEF7FF;
+}
+
+
+@font-face {
+    font-family: lucky-guy;
+    src: url(./assets/fonts/LuckiestGuy-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    color:var(--text1-color);
+    font-family:lucky-guy;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    gap:0.5em;
+}
+.logo{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    padding: 0.5em;
+}
+.logo-svg{
+    height: 1.5em;
+}
+.seprator{
+    height: 2vh;
+    width:95vw;
+    background-color: #CDE8E5;
+    border-radius: 5px;
+}
+.main{
+    min-height: 78vh;
+    overflow-y: auto;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
+    grid-template-rows: 1fr;
+    gap:0.5em;
+    padding: 0.8em;
+}
+.aside{
+    background-color: #EEF7FF;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 13px;
+}
+.content{
+    background-color: #EEF7FF;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 13px;
+}
+.head-project{
+    color: #0F0F0F;
+    font-size: 1.3em;
+    background-color: #CCD3CA;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    padding: 0.5em;
+}
+erru{
+    color: #0F0F0F;
+    font-size: 2em;
+    margin: auto;
+}
+.projects,.dues-list,.tasks-list,.dues-list-inner-li{
+    color: #0F0F0F;
+    font-size: 1em;
+    padding-left: 1.5em;
+}
+.projects > li,.dues-list > li,.dues-list-inner-li{
+    padding: 0.5em;
+}
+.projects > li:hover,.dues-list > li:hover,.selected-list,.dues-list-inner-li:hover{
+    cursor: pointer;
+    background-color: rgba(60, 60, 60, 0.5);
+}
+.addProject,.newTask{
+    color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.addProject button,.newTask button,.modal form button,.TaskEdit{
+    padding: 0.7em;
+    font-family: lucky-guy;
+    background-color: #7AB2B2;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+.editBtn,.dltBtn,.delProjectBtn{
+    padding: 0.4em;
+    font-family: lucky-guy;
+    background-color: #7AB2B2;
+    border: 0px solid black;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+.editBtn,.dltBtn,.delProjectBtn{
+    cursor: pointer;
+}
+.addProject button:hover,.newTask button:hover{
+    cursor: pointer;
+    font-size: 0.8em;
+}
+.head-due,.head-tasks{
+    background-color:#CCD3CA;
+    padding: 0.5em;
+}
+.projectHead{
+    color: #0F0F0F;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projectTitle{
+    padding: 0.7em;
+
+}
+.due-info{
+    padding: 1em;
+    font-size: 0.5em;
+    align-self: flex-end;
+    border-left:2px solid black ;
+}
+.due-gray{
+    background-color: rgba(60, 60, 60, 0.5);;
+}
+.due-green{
+    background-color: #C5FF95;
+}
+.due-red{
+    background-color: #E72929;
+}
+.head-tasks{
+    font-size: 1.6em;
+    color: #0F0F0F;
+    position: sticky;
+}
+.tasks{
+    padding: 1em;
+    font-size: 1em;
+   
+}
+.tasks-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+}
+.task-done{
+    text-decoration: line-through;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.buttonDiv{
+    display: flex;
+    gap:1em;
+}
+dialog{
+    border: 0px solid black;
+    border-radius: 10px;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2em;
+    align-items: flex-start;
+    padding: 2em;
+}
+.modal form button{
+    padding: 0.5rem;
+    border-radius: 20px;
+    align-self: center;
+}
+.modal form button:hover{
+    cursor: pointer;
+}
+.dues-list-inner{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:0.3em;
+    justify-content: space-between;
+}
+
+.footer{
+    text-align: center;
+}
+.footer a{
+    color:#0F0F0F;
+}
