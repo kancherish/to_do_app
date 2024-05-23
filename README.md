@@ -6,7 +6,7 @@ a CRUD appliation
 
 [Project Problem Link](https://www.theodinproject.com/lessons/node-path-javascript-todo-list)
 
-[Solution Live Link]()
+[Solution Live Link](https://kancherish.github.io/to_do_app/)
 
 *Webpack* was used  as a bundler for this project
 
