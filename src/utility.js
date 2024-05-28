@@ -19,7 +19,7 @@ export function isThisWeek(dateFormat) {
 
   
     // Check if the given date is between the start and end of the current week
-    return date >= startOfWeek && date <= endOfWeek;
+    return (date >= startOfWeek && date <= endOfWeek) && (today.getMonth()===date.getMonth();
 }
 
 export function isThisMonth(dateFormat) {
